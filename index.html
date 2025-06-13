@@ -13,7 +13,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      flex-direction: column;
+      min-height: 100vh;
       margin: 0;
       background-color: #f3f4f6;
     }
@@ -62,6 +63,11 @@
     .restart:hover {
       background-color: #2563eb;
     }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -71,6 +77,10 @@
     <div class="status" id="status"></div>
     <button class="restart" onclick="startGame()">Restart</button>
   </div>
+
+  <footer>
+    &copy; Developed by: Sharanu N Dibbadamani
+  </footer>
 
   <script>
     const boardElement = document.getElementById('board');
